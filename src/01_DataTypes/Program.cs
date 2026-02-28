@@ -1,4 +1,23 @@
-﻿// NUMERIC data types in C#
+﻿/*
+ * Module: 01_DataTypes
+ * Objective: Understand the foundational primitive types in C# and
+ * their architectural purpose.
+ * * Key Architectural Concepts:
+ * - Value Types vs. Reference Types: Most primitives here are
+ * structs (Value Types, Stack-allocated), except 'string', which is
+ * an object (Reference Type, Heap-allocated).
+ * - Compiler Type Inference: Literal suffixes (L, F, M) are
+ * mandatory to prevent the compiler from defaulting to Int32 or Double.
+ * - Precision vs. Performance (The Double vs Decimal trap): 
+ * > float/double: Base-2 (binary) floating-point. Fast, but introduces
+ * rounding errors in Base-10 fractions (e.g., 0.1 + 0.2 != 0.3).
+ * Used for physics, graphics, and scientific math.
+ * > decimal: Base-10 arithmetic. Slower and consumes more memory (16 bytes),
+ * but guarantees absolute precision. Strictly mandatory for
+ * financial/currency calculations.
+ */
+
+// NUMERIC data types in C#
 
 int age = 23;
 Console.WriteLine("int: " + age);
