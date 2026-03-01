@@ -52,8 +52,9 @@ Console.WriteLine("decimal: " + money);
 Console.WriteLine("decimal: " + decimal.MaxValue);
 Console.WriteLine("decimal: " + decimal.MinValue);
 
-// Skip line
-Console.WriteLine();
+// Separator
+Console.WriteLine(new string('-', 30));
+
 // -------------------------------------
 // -------------------------------------
 
@@ -64,3 +65,27 @@ char letter = 'p';  // The CHAR data type only supports ONE character
 
 Console.WriteLine("string: " + name);
 Console.WriteLine("char: " + letter);
+
+// Separator
+Console.WriteLine(new string('-', 20));
+
+// -------------------------------------
+// -------------------------------------
+
+// BOOLEAN data type in C#
+
+/*
+ * A boolean fundamentally represents a single bit of information (0 or 1).
+ * However, in C# (and most modern languages),
+ * 'bool' consumes 1 Byte (8 bits) of memory. Why? 
+ * Because CPUs are designed to address memory in byte-sized chunks.
+ * Addressing a single bit would require bitwise masking operations,
+ * drastically slowing down execution speed.
+ * Default value: false.
+ */
+
+bool isMale = true;
+Console.WriteLine("bool: " + isMale);
+
+isMale = false;
+Console.WriteLine("bool: " + isMale);
